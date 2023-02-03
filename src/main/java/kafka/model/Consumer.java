@@ -3,6 +3,7 @@ package kafka.model;
 import entity.HCM;
 import org.springframework.kafka.annotation.KafkaListener;
 import org.springframework.stereotype.Component;
+
 @Component
 public class Consumer {
     @KafkaListener(topics = "test")

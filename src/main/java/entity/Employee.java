@@ -26,7 +26,6 @@ public class Employee {
     boolean isActive;
 
 
-
     public Employee() {
         this.employeeid = employeeid;
         this.name = name;
@@ -88,7 +87,7 @@ public class Employee {
 
     @Override
     public String toString() {
-        return "EmployeeId : " + employeeid + ", Name : " + name + ", age : " + age + ", Gender : " + gender + ", Address : " + address + ", IsActive : " + isActive ;
+        return "EmployeeId : " + employeeid + ", Name : " + name + ", age : " + age + ", Gender : " + gender + ", Address : " + address + ", IsActive : " + isActive;
 
     }
 }

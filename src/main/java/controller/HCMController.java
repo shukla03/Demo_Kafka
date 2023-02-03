@@ -1,6 +1,5 @@
 package controller;
 
-import entity.Employee;
 import entity.HCM;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
@@ -24,4 +23,4 @@ public class HCMController {
         return hcmService.updateEmployee(id, hcmDetails);
     }
 
-    }
+}

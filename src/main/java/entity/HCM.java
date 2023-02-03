@@ -23,7 +23,7 @@ public class HCM {
     @Column(name = "clientAppreciationForCurrentYear")
     boolean clientAppreciationForCurrentYear;
 
-    @Column(name ="isEligibleForPromotion")
+    @Column(name = "isEligibleForPromotion")
     boolean isEligibleForPromotion;
 
 
@@ -87,7 +87,7 @@ public class HCM {
 
     @Override
     public String toString() {
-        return "EmployeeId : " + employeeid + ", Experience : " + experience + ", YearsInCurrentRole : " + yearsInCurrentRole + ", ClientAppreciationForCurrentYear : " + clientAppreciationForCurrentYear + ", GoalCompletedForCurrentYear : " + goalCompletedForCurrentYear +", isEligibleForPromotion : " +isEligibleForPromotion;
+        return "EmployeeId : " + employeeid + ", Experience : " + experience + ", YearsInCurrentRole : " + yearsInCurrentRole + ", ClientAppreciationForCurrentYear : " + clientAppreciationForCurrentYear + ", GoalCompletedForCurrentYear : " + goalCompletedForCurrentYear + ", isEligibleForPromotion : " + isEligibleForPromotion;
 
     }
 

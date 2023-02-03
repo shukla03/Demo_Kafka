@@ -15,7 +15,7 @@ public class EmployeeService {
 
     // CREATE
     public Employee createEmployee(Employee emp) {
-        if(emp.isActive()== true){
+        if (emp.isActive() == true) {
             return repository.findAll(emp.getEmployeeid());
         }
         return repository.save(emp);
@@ -39,9 +39,10 @@ public class EmployeeService {
 
         return repository.save(emp);
     }
-//Delete / remove incase null or inactive
+
+    //Delete / remove incase null or inactive
     public void deleteEmployee(Long employee) {
-        List<Employee> list1 =    new ArrayList<Employee>();
+        List<Employee> list1 = new ArrayList<Employee>();
         list1.removeIf(e -> e.getEmployeeid().equals(null));
 
 

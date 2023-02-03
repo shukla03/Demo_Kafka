@@ -13,9 +13,9 @@ public class KafaJSONMessageApplication {
         SpringApplication.run(KafaJSONMessageApplication.class, args);
     }
 
-    @KafkaListener(topics = AppConstants.TOPIC, groupId=AppConstants.GROUP_ID)
+    @KafkaListener(topics = AppConstants.TOPIC, groupId = AppConstants.GROUP_ID)
     public void listen(HCM h) {
 
-        System.out.println("Received info--> : " +h);
+        System.out.println("Received info--> : " + h);
     }
 }

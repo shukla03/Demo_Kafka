@@ -18,11 +18,11 @@ public class ProducerController {
 
 
     @PostMapping(value = "/producer")
-    public String sendMessage(@RequestBody HCM h)
-    {
+    public String sendMessage(@RequestBody HCM h) {
         kafkaProducer.publish(h);
         return "Message sent Successfully to the topic";
     }
 
 }
+
 

@@ -9,12 +9,11 @@ public class KafkaService {
 
     // Annotation required to listen
     // the message from Kafka server
-    @KafkaListener(topics = "JsonTopic",
+    @KafkaListener(topics = "RequestBody",
             groupId = "id", containerFactory
             = "empListner")
     public void
-    publish(HCM h)
-    {
+    publish(HCM h) {
         System.out.println("New Entry: "
                 + h);
     }
